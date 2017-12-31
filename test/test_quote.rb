@@ -46,6 +46,16 @@ class QuoteTest < Minitest::Test
     assert_equal quote.to_json, "{\"quote\":\"WOW\",\"author\":\"CENA\"}"
   end
 
+  def test_to_s_method
+    quote = Quotify::Quote.new(author: 'Aaron', quote: 'Send it')
+    assert_equal quote.to_s, 'Send it - Aaron'
+  end
+
+  def test_to_str_method_with_custom_spacer
+    quote = Quotify::Quote.new(author: 'Reeon', quote: 'My real loo friends')
+    assert_equal quote.to_str(spacer: " 🔥 "), 'My real loo friends 🔥 Reeon'
+  end
+
   def stub_yaml_quotes
     YAML.stubs(load_file: stub_hash)
   end
