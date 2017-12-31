@@ -1,4 +1,5 @@
-require 'test_helper'
+require 'minitest/autorun'
+require 'mocha/mini_test'
 require 'quotify/quote'
 
 class QuoteTest < Minitest::Test
