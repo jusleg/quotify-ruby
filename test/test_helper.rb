@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require 'mocha/mini_test'
 
 require 'simplecov'
-SimpleCov.start if ENV['CODECOV_TOKEN']
+SimpleCov.start
 
-require 'codecov' if ENV['CODECOV_TOKEN']
+require 'codecov'
 SimpleCov.formatter = SimpleCov::Formatter::Codecov
