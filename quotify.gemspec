@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
   s.description = 'Generates random quotes. Perfect placeholder text.'
   s.author      = 'Justin Leger'
   s.email       = 'hey@justinleger.ca'
-  s.files       = ['lib/**/*', 'LICENSE', 'CHANGELOG.md']
+  s.files       = ['lib/quotify/quotes.yml', 'lib/quotify/quote.rb', 'lib/quotify.rb', 'LICENSE', 'CHANGELOG.md']
   s.homepage    = 'https://github.com/jusleg/quotify-ruby'
   s.license     = 'MIT'
 
