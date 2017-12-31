@@ -19,10 +19,6 @@ module Quotify
 
     # Returns the quote and author in a string format
     # @option spacer [#to_s] Characters between quote and author
-    # <br>
-    # Example:
-    #   >> Quote.new.to_s(spacer: " 🔥 ")
-    #   => You must be the change you wish to see in the world. 🔥 Logan Paul
     def to_s(spacer: " - ")
       "#{@quote}#{spacer}#{@author}"
     end
@@ -30,10 +26,6 @@ module Quotify
 
     # Returns the quote and author in a string format
     # @option spacer [#to_s] Characters between quote and author
-    # <br>
-    # Example:
-    #   >> Quote.new.to_s(spacer: " 🔥 ")
-    #   => You must be the change you wish to see in the world. 🔥 Logan Paul
     def to_str(spacer: " - ")
       to_s(spacer: spacer)
     end
