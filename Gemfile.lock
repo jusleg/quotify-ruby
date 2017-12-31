@@ -1,0 +1,40 @@
+PATH
+  remote: .
+  specs:
+    quotify (0.1.0)
+      json
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    codecov (0.1.10)
+      json
+      simplecov
+      url
+    docile (1.1.5)
+    json (2.1.0)
+    metaclass (0.0.4)
+    minitest (5.10.3)
+    mocha (1.3.0)
+      metaclass (~> 0.0.1)
+    rake (12.3.0)
+    simplecov (0.15.1)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.2)
+    url (0.3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  codecov
+  minitest
+  mocha
+  quotify!
+  rake
+  simplecov
+
+BUNDLED WITH
+   1.16.1
