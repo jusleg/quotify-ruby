@@ -32,7 +32,7 @@ generate returns a [`Quotify::Quote`](https://github.com/jusleg/quotify-ruby/blo
 
 You can also use the fancy `spacer` option in `to_s` to create majestic quotes:
 ```
-Quote.new.to_s(spacer: " 🔥 ")
+Quotify::Quote.new.to_s(spacer: " 🔥 ")
  => Those were alternative facts 🔥 Soulja Boy
  ```
 
