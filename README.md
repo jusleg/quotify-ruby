@@ -32,14 +32,14 @@ generate returns a [`Quotify::Quote`](https://github.com/jusleg/quotify-ruby/blo
 
 You can also use the fancy `spacer` option in `to_s` to create majestic quotes:
 ```
-Quote.new.to_s(spacer: " 🔥 ")
+Quotify::Quote.new.to_s(spacer: " 🔥 ")
  => Those were alternative facts 🔥 Soulja Boy
  ```
 
 ## Contributing
 You can run all the tests with:
 ```
-bundle exec rake tests
+bundle exec rake
 ```
 
 If you wish to add new quotes, head over to [`quotes.yml`](https://github.com/jusleg/quotify-ruby/blob/master/lib/quotify/quotes.yml) and do a PR to add new ones. I'll merge pretty much everything for this file (given that it doesn't mess up the yaml).
