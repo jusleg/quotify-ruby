@@ -1,4 +1,6 @@
-authors:
+:updated_at: 2018-01-08
+:default_spacer: ' - '
+:authors:
 - Ivanka Trump
 - Dog The Bounty Hunter
 - Master Yoda
@@ -27,7 +29,7 @@ authors:
 - Olga
 - Logan Paul
 
-quotes:
+:quotes:
 - The ode lives upon the ideal, the epic upon the grandiose, the drama upon the real.
 - If we don't study the mistakes of the future we're doomed to repeat them for the
   first time.

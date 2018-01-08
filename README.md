@@ -36,6 +36,19 @@ Quotify::Quote.new.to_s(spacer: " 🔥 ")
  => Those were alternative facts 🔥 Soulja Boy
  ```
 
+ Quotify the quote list and spacer can be updated at runtime using the `configure` method
+ ```
+ Quotify.configure(spacer: ' -OG- ')
+ Quotify.configure(authors: ['Justin', 'Michel'])
+ ...
+ Quotify.reset_config # returns to default configurations
+ ```
+
+ You can also load your own config file using `configure_with`. Here is an example of a valid config file [`custom_quotes.yml`](https://github.com/jusleg/quotify-ruby/blob/master/test/custom_quotes.yml)
+ ```
+ Quotify.configure_with(File.join(__dir__, 'custom_quotes.yml'))
+```
+
 ## Contributing
 You can run all the tests with:
 ```
