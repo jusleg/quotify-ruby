@@ -1,4 +1,4 @@
-## V0.2.0rc
+## V0.2.0
 Saves the quotes in memory to prevent too many IO operations. Added configs that can be updated at runtime. `quotes.yml` only works with symbols as keys. From now on, prioritize symbols over strings. A new field `updated_at` was added to `quotes.yml` to allow for updating quotes using gem command. This will be added in the future.
 
 ## V0.1.1
