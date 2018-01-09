@@ -12,21 +12,20 @@ module Quotify
     # @param author [#to_s] A specified author
     # @return [Quote] quote with author
     def initialize(quote: nil, author: nil)
-      quote_list = YAML.load_file(File.join(__dir__, 'quotes.yml')) unless quote && author
-      @quote = quote || quote_list['quotes'].sample
-      @author = author || quote_list['authors'].sample
+      @quote = quote || Quotify.config[:quotes].sample
+      @author = author || Quotify.config[:authors].sample
     end
 
     # Returns the quote and author in a string format
     # @option spacer [#to_s] Characters between quote and author
-    def to_s(spacer: " - ")
+    def to_s(spacer: Quotify.config[:default_spacer])
       "#{@quote}#{spacer}#{@author}"
     end
 
 
     # Returns the quote and author in a string format
     # @option spacer [#to_s] Characters between quote and author
-    def to_str(spacer: " - ")
+    def to_str(spacer: Quotify.config[:default_spacer])
       to_s(spacer: spacer)
     end
 
