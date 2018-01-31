@@ -49,6 +49,9 @@ Quotify::Quote.new.to_s(spacer: " 🔥 ")
  Quotify.configure_with(File.join(__dir__, 'custom_quotes.yml'))
 ```
 
+## Update the quote database
+To pull the newest database version with all those spicy quotes, run `quotify update` or `quotify u` in the terminal.
+
 ## Contributing
 You can run all the tests with:
 ```
