@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+
+require 'quotify'
+require 'HTTParty'
+require 'yaml'
+require 'pry'
+
+if ARGV[0] == 'update' || ARGV[0] == 'u'
+  puts "-------------------------------------\n"\
+    "   ____              __  _ ____
+  / __ \\__  ______  / /_(_) __/_  __
+ / / / / / / / __ \\/ __/ / /_/ / / /
+/ /_/ / /_/ / /_/ / /_/ / __/ /_/ /
+\\___\\_\\__,_/\\____/\\__/_/_/  \\__, /
+                           /____/ \n"\
+    "-------------------------------------\n"\
+    "#{Quotify.generate}\n\n"
+  payload = YAML.load(HTTParty.get('https://raw.githubusercontent.com/jusleg/quotify-ruby/master/lib/quotify/quotes.yml'))
+
+  if Quotify.config[:updated_at] < payload[:updated_at]
+    File.write(File.join(__dir__, '../lib/quotify/quotes.yml'), payload.to_yaml)
+    puts "Updated the quote database. Enjoy the new quotes. As always, believe in yourself.\n\n"
+  else
+    puts "Nothing to update\n\n"
+  end
+end
