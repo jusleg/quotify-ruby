@@ -3,7 +3,6 @@
 require 'quotify'
 require 'HTTParty'
 require 'yaml'
-require 'pry'
 
 if ARGV[0] == 'update' || ARGV[0] == 'u'
   puts "-------------------------------------\n"\
