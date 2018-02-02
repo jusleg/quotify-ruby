@@ -1,3 +1,6 @@
+## V0.3.1
+Quotify CLI command can also be used to display random quotes without calling the update function. Calling `quotify` without parameter will now show a quote instead of returning null. Also the CLI logo was fixed.
+
 ## V0.3.0
 Introduction quotify CLI. Pretty barebone implementation with update method. `quotify update` or `quotify u` updates the database.
 
